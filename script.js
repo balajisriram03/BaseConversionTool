@@ -60,7 +60,7 @@ function calculate() {
         answer.value = "Incorrect Input";
         answer.classList.add("error"); 
     } else {
-        const num = parseInt(inputValue, 10); // Specify radix 10 (decimal)
+        const num = parseInt(inputValue, 10); 
         const base = secondValue === "opt1" ? 2 : (secondValue === "opt2" ? 8 : 16);
         const result = num.toString(base);
         answer.value = result;
