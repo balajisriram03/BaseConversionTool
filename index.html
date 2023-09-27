@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Base Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="page-title">Base Converter</h1>
+    <div class="content">
+        <div class="head">
+            <h1>Type a positive numerical value</h1>
+            <input type="text" id="enterbox">
+        </div>
+        <div class="change">
+            <select id="option1" onchange="option1()">
+                <option value="opt1">Binary</option>
+                <option value="opt2">Octal</option>
+                <option value="opt3">Decimal</option>
+                <option value="opt4">Hexadecimal</option>
+            </select>
+            <span>&nbsp;TO&nbsp;</span>
+            <select id="option2" onchange="option2()">
+                <option value="opt1">Binary</option>
+                <option value="opt2">Octal</option>
+                <option value="opt3">Decimal</option>
+                <option value="opt4">Hexadecimal</option>
+            </select>
+        </div>
+        <div class="calc">
+            <button class="clear" onclick="clr()">CLEAR&nbsp;<span class="material-symbols-outlined">backspace</span></button>
+            <button class="calculate" onclick="calculate()">CALCULATE&nbsp;<span class="material-symbols-outlined">calculate</span></button>
+        </div>
+        <div class="answer">
+            <h1>Value in New Base :</h1>
+            <input type="text" id="answer" value="" disabled>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
